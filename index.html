@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <title>Farhod Mukhamadiev — Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- 🔰 Favicon: для всех браузеров и устройств -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png" />
-
-    <!-- 🔤 Google Fonts -->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
       body {
         font-family: 'Inter', sans-serif;
         margin: 0 auto;
@@ -22,22 +17,16 @@
         background-color: #f9f9f9;
         color: #333;
       }
-
       header {
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
         gap: 10px;
       }
-
-      .lang-switch {
-        text-align: right;
-      }
-
       .lang-switch button,
       .print-btn {
         padding: 6px 14px;
-        margin-left: 8px;
         border: none;
         border-radius: 6px;
         cursor: pointer;
@@ -46,75 +35,48 @@
         font-weight: 600;
         transition: background 0.3s;
       }
-
       .lang-switch button:hover,
       .print-btn:hover {
         background-color: #3f5180;
       }
-
       .print-btn {
         background-color: #1d824c;
       }
-
       .print-btn:hover {
         background-color: #14653a;
       }
-
       h1 {
         color: #2e3a59;
-        font-size: 28px;
+        font-size: 24px;
       }
-
       h2 {
-        font-size: 20px;
+        font-size: 18px;
         color: #2e3a59;
       }
-
       .title {
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 700;
         color: #555;
-      }
-
-      img {
-        width: 140px;
-        border-radius: 10px;
+        margin-top: 0;
       }
 
       .contact p,
       .section p {
         margin: 6px 0;
       }
-
       .section {
-        margin: 20px 0;
+        margin: 16px 0;
       }
-
       .section ul {
         padding-left: 20px;
         margin-top: 6px;
       }
-
       .resume-section {
         display: none;
       }
-
       .resume-section.active {
         display: block;
       }
-
-      @media (max-width: 600px) {
-        body {
-          padding: 15px;
-        }
-        img {
-          width: 100px;
-        }
-        .lang-switch {
-          text-align: center;
-        }
-      }
-
       @media print {
         .lang-switch,
         .print-btn {
@@ -123,11 +85,21 @@
         body {
           background-color: white;
           color: black;
+          padding: 10px;
+          font-size: 12px;
+        }
+        h1 {
+          font-size: 18px;
+        }
+        h2 {
+          font-size: 14px;
+        }
+        .section {
+          margin: 10px 0;
         }
       }
     </style>
   </head>
-
   <body>
     <header>
       <div class="lang-switch">
@@ -138,28 +110,31 @@
         🖨 Print / Save as PDF
       </button>
     </header>
+    <main class="top-section">
+      <div id="en" class="resume-section active">
+        <h1>Farhod Mukhamadiev</h1>
+        <p class="title">Frontend Developer</p>
 
-    <div id="en" class="resume-section active">
-      <h1>Farhod Mukhamadiev</h1>
-      <p class="title">Frontend Developer</p>
-      <img src="images/farhod.jpg" alt="Photo of Farhod" />
-      <div class="section contact">
-        <p>Email: farhodmuhamadiev4@gmail.com</p>
-        <p>
-          Telegram:
-          <a href="https://t.me/farhodmuhamadiev68">t.me/farhodmuhamadiev68</a>
-        </p>
-        <p>GitHub: <a href="https://github.com/farabek">farabek</a></p>
-        <p>
-          Portfolio:
-          <a href="https://farabek.github.io/my-portfolio/">my-portfolio</a>
-        </p>
-        <p>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/farhod-rustam/">farhod-rustam</a>
-        </p>
-      </div>
-
+        <div class="section contact">
+          <p>Email: farhodmuhamadiev4@gmail.com</p>
+          <p>
+            Telegram:
+            <a href="https://t.me/farhodmuhamadiev68"
+              >t.me/farhodmuhamadiev68</a
+            >
+          </p>
+          <p>GitHub: <a href="https://github.com/farabek">farabek</a></p>
+          <p>
+            Portfolio:
+            <a href="https://farabek.github.io/my-portfolio/">my-portfolio</a>
+          </p>
+          <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/farhod-rustam/"
+              >farhod-rustam</a
+            >
+          </p>
+        </div>
       <div class="section">
         <h2>Summary</h2>
         <p>
@@ -227,7 +202,6 @@
     <div id="ru" class="resume-section">
       <h1>Фарход Мухамадиев</h1>
       <p class="title">Frontend разработчик</p>
-      <img src="images/farhod.jpg" alt="Фото Фархода" />
       <div class="section contact">
         <p>Email: farhodmuhamadiev4@gmail.com</p>
         <p>
